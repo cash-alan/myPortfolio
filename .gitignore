@@ -37,3 +37,7 @@ next-env.d.ts
 
 # brand project
 logo/
+design/
+
+# vscode workspace
+.vscode/
