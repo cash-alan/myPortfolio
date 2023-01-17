@@ -7,7 +7,6 @@
   margin-top: 0px;
   margin-bottom: 0px;
   z-index: 5;
-  color: white;
   box-sizing: border-box;
   margin-left: max(max(0vmin, env(safe-area-inset-left)), 4.1667vw);
   margin-right: max(max(0vmin, env(safe-area-inset-left)), 4.1667vw);
@@ -32,4 +31,9 @@
   gap: 56px;
   list-style: none;
   padding: 0 56px;
+}
+
+.links li a:hover {
+  border-bottom: 2px solid;
+  opacity: .8;
 }

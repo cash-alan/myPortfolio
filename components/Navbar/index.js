@@ -38,21 +38,11 @@ const Navbar = () => {
           </div>
           <div className={styles.links}>
             <ul>
-              <li>
-                <Link href={NAVBAR_LINKS[0].route}>
-                  {NAVBAR_LINKS[0].label}
-                </Link>
-              </li>
-              <li>
-                <Link href={NAVBAR_LINKS[1].route}>
-                  {NAVBAR_LINKS[1].label}
-                </Link>
-              </li>
-              <li>
-                <Link href={NAVBAR_LINKS[2].route}>
-                  {NAVBAR_LINKS[2].label}
-                </Link>
-              </li>
+              {NAVBAR_LINKS.slice(0, 3).map(({ route, label }) => (
+                <li key={route}>
+                  <Link href={route}>{label}</Link>
+                </li>
+              ))}
             </ul>
             <ul>
               <li>
