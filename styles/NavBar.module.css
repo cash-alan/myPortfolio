@@ -8,8 +8,8 @@
   margin-bottom: 0px;
   z-index: 5;
   box-sizing: border-box;
-  margin-left: max(max(0vmin, env(safe-area-inset-left)), 4.1667vw);
-  margin-right: max(max(0vmin, env(safe-area-inset-left)), 4.1667vw);
+  margin-left: var(--margin-size);
+  margin-right: var(--margin-size);
 }
 
 .navbar {
@@ -33,7 +33,16 @@
   padding: 0 56px;
 }
 
+.links li a {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  font-style: normal;
+  text-align: center;
+  color: #f9f5f5;
+}
+
 .links li a:hover {
   border-bottom: 2px solid;
-  opacity: .8;
+  opacity: 0.8;
 }

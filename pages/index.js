@@ -1,10 +1,14 @@
+import SectionContainer from 'components/SectionContainer'
+
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import styles from 'styles/Home.module.css'
-
 import explosion from 'design/avatar-image/AvatarPhotos/Chill-2.png'
-import SectionContainer from 'components/SectionContainer'
+
+import { GoMarkGithub } from 'react-icons/go'
+import { BsLinkedin } from 'react-icons/bs'
 
 export default function Home () {
   return (
@@ -22,14 +26,46 @@ export default function Home () {
               <Image src={explosion} alt='' fill />
             </div>
             <div className={styles['text-slider']}>
-              <h1 className={styles['slider-text']}>
-                Hi, I&apos;m Alan Smith Valencia Izquierdo
-              </h1>
+              <div></div>
+              <div>
+                <div className={styles['slider-text']}>
+                  <div></div>
+                  <div>
+                    <div className={styles['s-text']}>
+                      <h1>Hello, I&apos;m Alan Smith Valencia Izquierdo</h1>
+                    </div>
+                  </div>
+                  <div className={styles.links}>
+                    <div className={styles['s-links']}>
+                      <Link href='/contact' legacyBehavior>
+                        <a>
+                          <GoMarkGithub />
+                        </a>
+                      </Link>
+                      <Link href='/contact' legacyBehavior>
+                        <a>
+                          <BsLinkedin />
+                        </a>
+                      </Link>
+                    </div>
+                    <div>
+                      <Link href='/project' className={styles['p-link']}>
+                        All Projects
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </SectionContainer>
-        <SectionContainer>
-          <h2 className={styles.title}>Hello world</h2>
+        <SectionContainer f_direction='column'>
+          <h2 className={styles.title} style={{ color: '#A5F99C' }}>
+            FEATURED
+          </h2>
+          <h2 className={styles.title} style={{ color: '#A5F99C' }}>
+            PROJECTS
+          </h2>
         </SectionContainer>
       </main>
     </>

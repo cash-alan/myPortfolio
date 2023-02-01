@@ -1,4 +1,4 @@
-function SectionContainer ({ children, color }) {
+function SectionContainer ({ children, color, f_direction }) {
   return (
     <>
       <section>{children}</section>
@@ -11,6 +11,7 @@ function SectionContainer ({ children, color }) {
           height: 100%;
           overflow: hidden;
           background-color: ${color || 'transparent'};
+          flex-direction: ${f_direction || 'row'};
         }
       `}</style>
     </>

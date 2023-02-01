@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 :root {
-  --principal-font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --text-font: Verdana, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --big-font: constantia, var(--text-font);
+  --funny-fonts: 'cascadia code', 'Itim', var(--text-font);
+  --margin-size: max(max(0vmin, env(safe-area-inset-left)), 4.1667vw);
 }
 
 #__next {
@@ -10,8 +15,9 @@
 
 html,
 body {
-  color: black;
-  font-family: var(--principal-font);
+  /* background-color: #eee; */
+  color: #0E1017;
+  font-family: var(--text-font);
   height: 100%;
   margin: 0;
   padding: 0;
@@ -32,8 +38,8 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: #eee;
+    background-color: #0E1017;
   }
 }
 
