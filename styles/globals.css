@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 :root {
+  
+  --margin-size: max(max(0vmin, env(safe-area-inset-left)), 4.1667vw);
+
+  /* font */
   --text-font: Verdana, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --big-font: constantia, var(--text-font);
   --funny-fonts: 'cascadia code', 'Itim', var(--text-font);
-  --margin-size: max(max(0vmin, env(safe-area-inset-left)), 4.1667vw);
+  
+  /* color */
+  --background-color: #f6f6f6;
+  --text-color: #0E1017;
+  --contact-color: #A5F99C;
+  --project-color: #f6b283;
+  --about-color: #f2a6ca;
+  --nose-color: #ef7475;
+  --nose-color-light: #e73f36;
+  --contact-color-light: #7bbd61;
+  --project-color-light: #ed6c31;
+  --about-color-light: #eb62a1;
+
 }
 
 #__next {
@@ -15,8 +31,8 @@
 
 html,
 body {
-  /* background-color: #eee; */
-  color: #0E1017;
+  background: var(--background-color);
+  color: var(--text-color);
   font-family: var(--text-font);
   height: 100%;
   margin: 0;
@@ -24,22 +40,15 @@ body {
   width: 100%;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
+vh-hn
 * {
   box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: #eee;
-    background-color: #0E1017;
+  :root {
+    --background-color: #0E1017;
+    --text-color: #f6f6f6;
   }
 }
 

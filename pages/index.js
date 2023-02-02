@@ -60,10 +60,10 @@ export default function Home () {
           </div>
         </SectionContainer>
         <SectionContainer f_direction='column'>
-          <h2 className={styles.title} style={{ color: '#A5F99C' }}>
+          <h2 className={styles.title}>
             FEATURED
           </h2>
-          <h2 className={styles.title} style={{ color: '#A5F99C' }}>
+          <h2 className={styles.title}>
             PROJECTS
           </h2>
         </SectionContainer>

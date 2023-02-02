@@ -6,8 +6,8 @@ function Button ({ text, handleClick, colorHover, styles }) {
         button {
           background-color: transparent;
           border-radius: 32px;
-          border: #707070 2px solid;
-          color: #707070;
+          border: var(--text-color) 2px solid;
+          color: var(--text-color);
           font-family: var(--text-font);
           font-size: 24px;
           font-weight: bold;
@@ -16,7 +16,7 @@ function Button ({ text, handleClick, colorHover, styles }) {
         }
 
         button:hover {
-          background-color: #707070;
+          background-color: var(--text-color);
           color: ${colorHover || 'white'};
         }
       `}</style>
