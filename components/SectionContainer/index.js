@@ -1,17 +1,18 @@
-function SectionContainer ({ children, color, f_direction }) {
+function SectionContainer(props) {
   return (
     <>
-      <section>{children}</section>
+      <section {...props}>{props.children}</section>
       <style jsx>{`
         section {
           display: flex;
-          align-items: center;
+          ${props.no_aligncenter || 'align-items: center;'}
           justify-content: center;
           width: 100%;
-          height: 100%;
+          height: var(--app-height);
           overflow: hidden;
-          background-color: ${color || 'transparent'};
-          flex-direction: ${f_direction || 'row'};
+          background-color: ${props.color || 'transparent'};
+          flex-direction: ${props.f_direction || 'row'};
+          padding: 6.25vw 0 2vw;
         }
       `}</style>
     </>
